@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1{
+        font-size: 3vw;
+    text-align: center;
+    }
+
+    h2{
+        font-size: 2vw;
+    }
+
+    h3{
+        font-size: 1.5vw;
+    }
+    p, table, tr, td, ul, li{
+        font-size: 1.8vw;
+    }
+
+    header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    }
+    .nav{
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    margin: 0.3%;  /*5px*/
+    padding: 0.3%;  /*5px*/
+    font-size: 1.5vw;
+    text-decoration: none;
+    }
+    
+    footer{
+    background-color: black;
+    text-align: center;
+    color:white;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    height: 50px;
+    margin-top: 0;
+    }
+ 
+    /*red sociales*/
+.redsoc{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    }
+    
+    .redsoc a{
+    color:#000000;
+    margin: 0px 6px; /*margen izq y margen derecho*/
+    font-size: 2vw; /*20px*/
+    }
+    
+    .redsoc a:hover{
+    color: #999999
+    }
+    
+    /*imagenes*/
+    
+    .img-cliente{
+    width: 20%;
+    margin-left: 11%;
+    }
+
+    .imgindex, .imgabout{
+        width: 40%;
+    }
+
+    /*fomulario*/
+label, input{
+    font-size: 1.0vw;
+    }
+    
+    input[type=text],input[type=password],
+    input[type=date],input[type=email],
+    input[type=number],input[type=url], input[type=tel],
+    input[type=text],input[type=textArea], select{
+    width:80%;
+    padding: 1vw; /*12px 20px;*/
+    margin: 1vw; /*8px 0;*/
+    display: inline-block;
+    border: 1vw; /*1px solid #ccc;*/
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+    input[type=submit]{
+        width:100%;
+        background-color: #4CAF50;
+        color:white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        
+        input[type=submit]:hover{
+        background-color: #45a049;
+        }
+
+        .formulario{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 2%;
+            margin: 1% 20%;
+            }
+            
+            textarea{
+            width: 60%;
+            }

@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    margin: 2vh 0 2vh 0;
+}
+
+nav {
+    height: 50px;
+    /*altura*/
+    width: 100%;
+    /*anchura*/
+    padding-top: 20px;
+    background-color: rgb(38, 101, 138);
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-between;
+}
+
+nav ul {
+    height: 40px;
+    /*altura*/
+    width: 50%;
+    /*anchura*/
+    /* background-color: rgb(179, 201, 214);*/
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-between;
+    /*quita las bolitas de listas*/
+    list-style-type: none;
+}
+
+nav a {
+    padding: 7px;
+    /*quita la linea subrayado*/
+    text-decoration: none;
+    border: black solid 2px;
+    border-radius: 4px;
+    color: white;
+
+}
+
+nav a:hover {
+    color: coral;
+    background-color: bisque;
+    /*font-size: 20px;*/
+}
+
+
+
+.div-principal-ofertas {
+    height: 40px;
+    /*altura*/
+    width: 50%;
+    /*anchura*/
+    padding-top: 15px;
+    background-color: darkorange;
+    margin: 10px 0 10px 25%;
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.div-principal-ofertas a {
+    /*quita la linea subrayado*/
+    text-decoration: none;
+}
+
+.carrusel {
+    height: 70vh;
+    /*altura*/
+    width: 100%;
+    /*anchura*/
+    overflow-x: hidden;
+    background-color: aqua;
+}
+
+/*este va ser el carrusel*/
+.div-principal-anuncios {
+    height: 60vh;
+    /*altura*/
+    width: calc(500px*4);
+    /*anchura*/
+    padding-top: 15px;
+    background-color: rgb(126, 187, 11);
+
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-between;
+
+    /*animacion*/
+    animation: animacion 50s linear infinite;
+    -webkit-animation: animacion 8s linear infinite;
+    overflow-x: hidden;
+}
+
+/*animacion*/
+@keyframes animacion {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-500px*2));
+        transform: translateX(calc(-500px*2));
+    }
+}
+
+.div-uno,
+.div-dos,
+.div-tres {
+    height: 50vh;
+    /*altura*/
+}
+
+.div-uno {
+    background-color: blue;
+}
+
+.div-dos {
+    background-color: rgb(255, 0, 242);
+}
+
+.div-tres {
+    background-color: rgb(145, 255, 0);
+}
+
+/*proximos viajes programados*/
+.div-contenedor-viajes-programados {
+    height: 45vh;
+    /*altura*/
+    width: 100%;
+    /*anchura*/
+    padding-top: 40px;
+    background-color: rgb(57, 135, 214);
+
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.div-contenedor-viajes-programados img {
+    height: auto;
+    /*altura*/
+    width: 100%;
+    /*anchura*/
+}
+
+.div-contenedor-viajes-programados img:hover {
+    transform: scale(1.1);
+}
+
+.div-viajes-programados {
+    height: 80%;
+    /*altura*/
+    width: 22%;
+    /*anchura*/
+    background-size: cover;
+    overflow: hidden;
+}
+
+.div-viajes-programados a {
+text-decoration: none;
+position:relative;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    margin-top: 0;
+}
+
+footer ul,
+footer a {
+    list-style-type: none;
+    text-decoration: none;
+    color: antiquewhite;
+    line-height: 25px;
+}

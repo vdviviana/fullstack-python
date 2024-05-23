@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Código https://fontawesome.com para iconos de redes sociales en el footer -->
+    <script src="https://kit.fontawesome.com/2ebc501450.js" crossorigin="anonymous"></script>
+
+    <!--  https://favicon.io/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./imagenes/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!--  Llamar al archivo style.css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Argentina Run & Play</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>Argentina Run & Play</span>
+            <ul>
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a class="" href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Mis favoritos</a></li>
+                <li><a href="merchan.html">Mis viajes</a></li>
+                <li><a href="sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--
+        sección 1: iniciar sesion
+    -->
+
+        <section class="section-iniciar-sesion">
+            <div class="div-iniciar-sesion">
+
+                <!-- si yo no le agrego nada a la etiqueta form, por defecto, viaja por el metodo GET
+                  (la información que viaje será visible en la url)  -->
+                <form class="form-iniciar-sesion" action="">
+                    <h2 class="iniciar-sesion-titulo">
+                        <center>Listo para una nueva aventura?</center>
+                    </h2>
+                    <div class="iniciar-sesion-input">
+                        <label for="usuario">Email</label>
+                        <!-- la propiedad "required" obliga a llenar los campos -->
+                        <input class="" type="text" id="usuario" required>
+                    </div>
+                    <div class="iniciar-sesion-input">
+                        <label for="contrasenia">Contraseña</label>
+                        <input type="password" id="contrasenia" required>
+                    </div>
+                    <!--  <button class="btn-iniciar-sesion">Iniciar Sesion</button>  -->
+
+                    <!--  código reutilizado (del bóton "Registrarse" del index.html)  -->
+                    <div class="enlace-registrarse">
+                        <a href="registrarse.html">Iniciar Sesion</a>
+                    </div>
+
+                    <a class="enlace-crear-cuenta" href="./registrarse.html">Crear cuenta</a>
+
+                    
+                </form>
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <!--
+        footer
+    -->
+
+    <footer>
+        <div class="footer-enlaces">
+            <a href="">Argentina Run & Play</a>
+            <ul class="footer-enlaces">
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a class="" href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Mis favoritos</a></li>
+                <li><a href="merchan.html">Mis viajes</a></li>
+                <li><a href="sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-redes-sociales">
+            <h3>Seguinos en nuestras redes sociales!</h3>
+            <!-- iconos y hipervinculos -->
+            <a class="redsoc" href="https://www.twitter.com" target="_blank"> <i class="fa fa-twitter"
+                    aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"
+                    aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.pinterest" target="_blank"> <i class="fa fa-pinterest"
+                    aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a>
+            <br>
+            <P>Derechos de autor @2024</P>
+            <br>
+        </div>
+    </footer>
+</body>
+
+</html>

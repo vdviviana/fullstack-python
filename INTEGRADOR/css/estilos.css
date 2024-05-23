@@ -1,3 +1,42 @@
+/* importar archivo css */
+@import url(index_medias_querys.css);
+@import url(nosotros_medias_querys.css);
+@import url(registrarse_medias_querys.css);
+@import url(sesion_medias_querys.css);
+
+
+
+:root {
+    /*definir variables de colores */
+    /* por pareja de combinación */
+    --tonoA1: #ABEBEF;
+    --tonoA2: #F8DCD7;
+
+    --tonoB1: white;
+    --tonoB2: black;
+
+    --tonoC1: #C8ABEF;
+    --tonoC2: #D2EFAB;
+
+    --tonoD1: #BDEFAB;
+    --tonoD2: #DDABEF;
+
+    --tonoE1: #268699;
+    --tonoE2: #993926;
+
+    --tonoF1: #BDEFAB;
+    --tonoF2: #DDABEF;
+
+    --tonoG1: #F0AE54;
+    --tonoG2: #5496F0;
+
+    --gris: #F1F1F1;
+
+    --azul: #4869F3;
+    --azul-oscuro: #0628B9;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +46,26 @@ body {
     overflow-x: hidden;
 }
 
+/* un atributo que se aplica a todas las secciones */
 section {
-    margin: 2vh 0 2vh 0;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
+
+/*  nav bootstrap */
 nav {
     height: 50px;
     /*altura*/
     width: 100%;
     /*anchura*/
     padding-top: 20px;
-    background-color: rgb(38, 101, 138);
+    background-color: var(--azul);
     /*pone todo en una misma linea*/
     display: flex;
     flex-direction: row;
     /*para que distribuya el enlace en espacio parejo*/
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav ul {
@@ -44,71 +87,25 @@ nav a {
     padding: 7px;
     /*quita la linea subrayado*/
     text-decoration: none;
-    border: black solid 2px;
+   /* border: var(--azul-oscuro) solid 1px; */
     border-radius: 4px;
-    color: white;
-
+    color: black;
 }
 
 nav a:hover {
-    color: coral;
-    background-color: bisque;
+    background-color: var(--tonoB1);
     /*font-size: 20px;*/
+  /*  border: var(--azul-oscuro) solid 1px; */
 }
 
 
+/* carrusel texto ofertas
+archivo medias_querys.css
+*/
 
-.div-principal-ofertas {
-    height: 40px;
-    /*altura*/
-    width: 50%;
-    /*anchura*/
-    padding-top: 15px;
-    background-color: darkorange;
-    margin: 10px 0 10px 25%;
-    /*pone todo en una misma linea*/
-    display: flex;
-    flex-direction: row;
-    /*para que distribuya el enlace en espacio parejo*/
-    justify-content: space-between;
-    text-align: center;
 
-}
 
-.div-principal-ofertas a {
-    /*quita la linea subrayado*/
-    text-decoration: none;
-}
-
-.carrusel {
-    height: 70vh;
-    /*altura*/
-    width: 100%;
-    /*anchura*/
-    overflow-x: hidden;
-    background-color: aqua;
-}
-
-/*este va ser el carrusel*/
-.div-principal-anuncios {
-    height: 60vh;
-    /*altura*/
-    width: calc(500px*4);
-    /*anchura*/
-    padding-top: 15px;
-    background-color: rgb(126, 187, 11);
-
-    /*pone todo en una misma linea*/
-    display: flex;
-    flex-direction: row;
-    /*para que distribuya el enlace en espacio parejo*/
-    justify-content: space-between;
-
-    /*animacion*/
-    animation: animacion 50s linear infinite;
-    -webkit-animation: animacion 8s linear infinite;
-    overflow-x: hidden;
-}
+/* carrusel imagénes */
 
 /*animacion*/
 @keyframes animacion {
@@ -123,86 +120,139 @@ nav a:hover {
     }
 }
 
-.div-uno,
-.div-dos,
-.div-tres {
-    height: 50vh;
-    /*altura*/
-}
-
 .div-uno {
-    background-color: blue;
+    background-color: var(--tonoB1);
+    border: 3px var(--tonoE1) solid;
 }
 
 .div-dos {
-    background-color: rgb(255, 0, 242);
+    background-color: var(--tonoB1);
+    border: 3px var(--tonoE2) solid;
 }
 
 .div-tres {
-    background-color: rgb(145, 255, 0);
+    background-color: var(--tonoB1);
+    border: 3px var(--tonoC2) solid;
 }
 
-/*proximos viajes programados*/
-.div-contenedor-viajes-programados {
-    height: 45vh;
-    /*altura*/
-    width: 100%;
-    /*anchura*/
-    padding-top: 40px;
-    background-color: rgb(57, 135, 214);
 
-    /*pone todo en una misma linea*/
-    display: flex;
-    flex-direction: row;
-    /*para que distribuya el enlace en espacio parejo*/
-    justify-content: space-between;
-    text-align: center;
 
-}
 
-.div-contenedor-viajes-programados img {
-    height: auto;
-    /*altura*/
-    width: 100%;
-    /*anchura*/
-}
 
-.div-contenedor-viajes-programados img:hover {
+
+/* sección 3: viajes programados */
+.contenedor-viajes-programados img:hover {
     transform: scale(1.1);
 }
 
-.div-viajes-programados {
-    height: 80%;
-    /*altura*/
-    width: 22%;
-    /*anchura*/
-    background-size: cover;
-    overflow: hidden;
-}
+.viajes-programados-descripcion a,
+.viajes-tendencias-descripcion a {
+    color: var(--tonoB2);
 
-.div-viajes-programados a {
-text-decoration: none;
-position:relative;
-}
-
-
-footer {
-    background-color: black;
-    text-align: center;
-    color: white;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    height: 100%;
-    margin-top: 0;
-}
-
-footer ul,
-footer a {
+    /* quitando decoraciones a los enlaces */
     list-style-type: none;
     text-decoration: none;
-    color: antiquewhite;
-    line-height: 25px;
 }
+
+.div-viajes-regalos a {
+    color: var(--tonoG1);
+
+    /* quitando decoraciones a los enlaces */
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    background-color: var(--azul);
+    height: 200px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+
+    padding: 20px;
+
+    text-align: center;
+    color: var(--tonoB2);
+    position: relative;
+
+    display: flex;
+    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    flex-direction: column;
+    justify-content: space-between;
+    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    align-items: center;
+
+}
+
+.footer-enlaces {
+    height: 100px;
+    width: 80%;
+
+    display: flex;
+    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    flex-direction: row;
+    justify-content: space-between;
+    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    align-items: center;
+}
+
+.footer-enlaces ul { 
+    line-height: 25px;
+
+    display: flex;
+    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    flex-direction: row;
+    /*
+justify-content: center;  /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-enlaces li,
+.footer-enlaces a {
+    padding: 7px;  
+    border-radius: 4px;
+    color: black;
+
+
+    /*  color: var(--tonoB2);
+   quitando decoraciones a los enlaces */
+    list-style-type: none;
+    text-decoration: none;
+
+    /* quitando decoraciones a la lista */
+    list-style: none;
+}
+
+.footer-redes-sociales {
+    /*  background-color: var(--tonoD2);  */
+    height: 70px;
+    width: 80%;
+
+    padding: 0 20px;
+
+ /*   border: 2px var(--tonoB2) solid; */
+    border-radius: 30px;
+
+    display: flex;
+    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    flex-direction: row;
+    justify-content: space-between;
+    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+    align-items: center;
+}
+
+.footer-enlaces a:hover {
+    background-color: var(--tonoB1);
+    /*font-size: 20px;*/
+ /*   border: var(--azul-oscuro) solid 1px; */
+}
+
+/*
+.footer-enlaces li:hover {
+    background-color: var(--tonoA1);
+}
+*/

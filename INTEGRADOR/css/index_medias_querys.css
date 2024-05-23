@@ -1,0 +1,325 @@
+/************/
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {}
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 795px) {}
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 796px) and (max-width:991px) {}
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+          /* seccion 1 - carrusel texto ofertas*/
+
+          /* sección */
+          .carrusel-texto {
+                    height: 270px;
+                    width: 100%;
+
+                    margin-top: 60px;
+                    /* Usando el atributo overflow, voy a ocultar lo que salga por fuera de esta sección */
+                    overflow: hidden;
+          }
+
+          .carrusel-texto-fondo {
+                    background-color: var(--tonoA1);
+                    height: 270px;
+                    width: 80%;
+                    margin-left: 5%;
+                    border-radius: 30px;
+
+                    /* difuminado interno */
+                    box-shadow: inset 0px 0px 20px var(--tonoA1),
+                              /* difuminado externo */
+                              0px 0px 20px var(--tonoA1);
+
+                    background-image: url(../imagenes/portada4.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    /* Usando el atributo overflow, voy a ocultar lo que salga por fuera de esta sección */
+                    overflow: hidden;
+          }
+
+          .div-principal-ofertas {
+                    height: 90px;
+                    /*altura*/
+                    width: 70%;
+                    /*anchura*/
+                    padding: 15px;
+                    background-color: white;
+                    margin-top: 10px;
+                    margin-left: 15%;
+                    /* borde */
+                    border: 2px rgb(126, 122, 122) solid;
+                    border-radius: 30px;
+
+                    /* difuminado interno */
+                    box-shadow: inset 0px 0px 20px var(--tonoB1),
+                              /* difuminado externo */
+                              0px 0px 20px var(--tonoB1);
+
+
+                    display: flex;
+                    /*pone todo en una misma linea*/
+                    flex-direction: row;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    text-align: center;
+          }
+
+          /* botones "Regalar un día",
+          "Ver trailers" y "Comparte un favorito" */
+          .oferta-enlace {
+                    height: 80px;
+                    width: 170px;
+                    padding-top: 5px;
+                    /* dar volumen al botón de los enlaces 
+                    padding: 2px 30px 55px 30px;*/
+
+                    /* borde */
+                    border: 2px rgb(126, 122, 122) solid;
+                    border-radius: 20px;
+
+                    text-decoration: none;
+                    color: black;
+          }
+
+          .enlace-icono i {
+                    margin-top: 40px;
+          }
+
+          /* div de botón Registrarse */
+          .enlace-registrarse {
+                    background-color: blue;
+                    width: 12%;
+                    margin: 40px 43%;
+ 
+                    padding: 10px 10px; 
+                    
+                    border: 2px var(--tonoB1) solid;
+                    border-radius: 20px;
+                    text-align: center;
+          }
+
+          /* div de botón Registrarse */
+          .enlace-registrarse a {
+                    color: var(--tonoB1);
+                   
+                    /* quitando decoraciones a los enlaces */
+                    list-style-type: none;
+                    text-decoration: none;
+          }
+
+
+
+          /* sección 1 - carrusel imagénes */
+
+          /* sección */
+          .carrusel-imagenes {
+                    background-color: var(--tonoA2);
+                    margin-top: 70px;
+                    overflow: hidden;
+
+                    box-shadow: inset 0px 0px 20px var(--tonoA2),
+                              /* difuminado externo */
+                              0px 0px 20px var(--tonoA2);
+          }
+
+
+          .principal-anuncios {
+                    height: 200px;
+                    /*altura*/
+                    width: calc(500px*4);
+                    /*anchura*/
+                    padding-top: 35px;
+
+                    /*pone todo en una misma linea*/
+                    display: flex;
+                    flex-direction: row;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+
+                    /*animacion*/
+                    animation: animacion 50s linear infinite;
+                    -webkit-animation: animacion 30s linear infinite;
+                    overflow-x: hidden;
+          }
+
+          .div-uno,
+          .div-dos,
+          .div-tres {
+                    /*altura*/
+                    height: 140px;
+                    width: 20%;
+
+                    border-radius: 10px;
+                    padding: 15px;
+          }
+
+
+          /* seccion 3 - galeria viajes */
+
+          /* sección */
+
+
+          .section-galeria-viajes {
+                    height: 500px;
+
+                    border: 2px var(--gris) solid;
+                    margin-top: 50px;
+                    padding: 20px;
+          }
+
+          /* div que contiene todas las tarjetas de los viajes
+por lo tanto debe acomodar los elementos que contenga
+en una fila, que se adapte según la cantidad de esos elementos */
+          .galeria-viajes {
+                    /*altura*/
+                    /*anchura*/
+                    width: 100%;
+
+                    padding-top: 40px;
+
+                    /*pone todo en una misma linea*/
+                    display: flex;
+                    flex-direction: row;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    text-align: center;
+
+          }
+
+          /* contiene imagen y descripción del viaje */
+          .contenedor-viaje-programado {
+                    width: 22%;
+                    border: 2px var(--tonoA1) solid;
+                    border-radius: 50px;
+
+                    /*pone todo en una misma columna */
+                    display: flex;
+                    flex-direction: column;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    text-align: center;
+
+                    /* esconder todo lo que sobrepase el div */
+                    overflow: hidden;
+          }
+
+          .viajes-programados-img img {
+                    /*altura*/
+                    height: 200px;
+                    /*anchura*/
+                    width: 100%;
+          }
+
+          .viajes-programados-descripcion {
+                    background-color: aliceblue;
+                    /*altura*/
+                    height: 200px;
+                    /*anchura*/
+                    width: 100%;
+          }
+
+
+          /* seccion 4 - tendencias */
+
+          /* sección */
+          .section-galeria-tendencias {
+                    height: 500px;
+                    border: 2px var(--gris) solid;
+                    margin-top: 70px;
+                    padding: 20px;
+          }
+
+          .contenedor-viaje-tendencias {
+                    width: 22%;
+                    border: 2px var(--tonoC1) solid;
+                    border-radius: 50px;
+
+                    /*pone todo en una misma columna */
+                    display: flex;
+                    flex-direction: column;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    text-align: center;
+
+                    /* esconder todo lo que sobrepase el div */
+                    overflow: hidden;
+          }
+
+          .viajes-tendencias-descripcion {
+                    background-color: var(--gris);
+                    /*altura*/
+                    height: 200px;
+                    /*anchura*/
+                    width: 100%;
+          }
+
+          /* sección 5 - regalos y recuerdos lindos */
+
+          /* sección */
+
+          .section-regalos-recuerdos {
+                    height: 270px;
+
+                    margin-top: 50px;
+                    margin-bottom: 70px;
+                    padding: 20px;
+
+                    border-radius: 30px;
+
+                    background-image: url(../imagenes/regalo2.jpg);
+                    background-position: left;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    box-shadow: inset 0px 0px 20px var(--tonoG1),
+                              /* difuminado externo */
+                              0px 0px 20px var(--tonoG1);
+
+
+
+                    overflow: hidden;
+          }
+
+          .div-contenedor-regalos {
+                    height: 200px;
+                    width: 3000px;
+                    margin-top: 30px;
+                    /*pone todo en una misma linea*/
+                    display: flex;
+                    flex-direction: row;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+
+                    /*animacion*/
+                    animation: animacion 50s linear infinite;
+                    -webkit-animation: animacion 5s linear infinite;
+                    overflow-x: hidden;
+
+          }
+
+          .div-viajes-regalos {
+                    height: 200px;
+                    width: 160px;
+
+                    align-items: center;
+                    text-align: center;
+          }
+
+          .div-viajes-regalos img {
+                    height: 150px;
+                    width: 100%;
+
+                    border: 2px var(--tonoG1) solid;
+                    border-radius: 130px;
+          }
+
+}
+
+/************/

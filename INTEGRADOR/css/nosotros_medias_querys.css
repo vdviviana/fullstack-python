@@ -1,0 +1,93 @@
+/************/
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {}
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 795px) {}
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 796px) and (max-width:991px) {}
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) { 
+          /* sección 1: carrusel con texto ofertas */
+
+          /* sección */
+.section-somos {
+          background-color: var(--tonoA1);
+          height: 300px;
+          width: 90%;
+          margin-top: 50px;
+}
+
+
+          /* sección 2: perfiles de nosotros */
+
+          /* sección */
+
+          .section-perfiles {
+                    height: 950px;
+
+                    margin-top: 50px;
+                    margin-bottom: 70px;
+                    padding: 20px;
+
+                    border: 2px var(--gris) solid;
+
+                    /*pone todo en una misma columna */
+                    display: flex;
+                    flex-direction: column;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    text-align: center;
+
+                    overflow: hidden;
+          }
+
+          .div-perfiles-equipo {
+                    height: 900px;
+                    width: 100%;
+                    margin-top: 30px;
+                    /*pone todo en una misma linea*/
+                    display: flex;
+                    flex-direction: row;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+
+          }
+
+          .div-perfil {
+                    height: 230px;
+                    width: 30%;
+
+                    /*pone todo en una misma columna */
+                    display: flex;
+                    flex-direction: column;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    /* centrar los elementos */
+                    align-items: center;
+                    /* centrar el texto */
+                    text-align: center;
+          }
+
+          .div-perfil img {
+                    height: 190px;
+                    width: 60%;
+
+                    border: 2px var(--tonoA1) solid;
+                    border-radius: 130px;
+          }
+
+          .div-perfil a {
+
+                    color: var(--tonoB2);
+                    /* quitando decoraciones a los enlaces */
+                    list-style-type: none;
+                    text-decoration: none;
+                
+          }
+}

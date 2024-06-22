@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*TODO FONDO NEGRO*/
+    background-color: black;
+    color: azure;
+    /* overflow-x: hidden; */
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera {
+    /*altura*/
+    height: 100%;
+    /*anchura*/
+    width: 100%;
+
+    /*margenes*/
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-around;
+
+    /*para identificar elemento nav*/
+    border-radius: 2px;
+    border: 1px;
+    border: 1px white solid;
+
+
+}
+
+.cabecera a img {
+    /*altura*/
+    height: 80%;
+    /*anchura*/
+    width: 50%;
+}
+
+.button {
+    color: azure;
+    /*altura*/
+    height: 80%;
+    padding: 5px;
+    /*quita la linea subrayado*/
+    text-decoration: none;
+    transition: 0.2s all;
+    /*sombra*/
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+    /*para identificar elemento nav*/
+    border-radius: 2px;
+    border-top-right-radius: 10px;
+    border: 1px white solid;
+}
+
+nav {
+    color: azure;
+    /*fondo negro*/
+    background-color: black;
+    /*altura*/
+    height: 50px;
+    /*anchura*/
+    width: 98%;
+
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    /*padding-top: 10px; */
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*para que el nav se mueva con la pagina*/
+   /* position: sticky;
+    top: 0; */
+
+    /*para identificar elemento nav*/
+    border-radius: 2px;
+    border: 1px white solid;
+}
+
+nav ul {
+    color: azure;
+    /*altura*/
+    height: 40%;
+    /*anchura*/
+    width: 100%;
+    /*margenes*/
+    margin-top: 1.4%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-around;
+    /*pone todo en una misma linea*/
+    display: flex;
+    flex-direction: row;
+    /*quita las bolitas de listas*/
+    list-style-type: none;
+}
+
+nav a {
+    /*color de la fuente*/
+    color: rgb(227, 25, 25);
+    /*margen interior del link*/
+    padding: 5px;
+    /*quita la linea subrayado*/
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-weight: bold; */
+    border-top-right-radius: 10px;
+    border: 1px rgb(227, 25, 25) solid;
+}

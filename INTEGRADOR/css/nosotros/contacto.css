@@ -1,0 +1,19 @@
+#section-formulario-contacto form {
+    display: grid;
+    /*cada fila tendra dos columnas*/
+    grid-template-columns: repeat(2, auto);
+    /*espacio entre las filas*/
+    grid-row-gap: 1%;
+        /*espacio entre las columnas*/
+        grid-column-gap: 1%;
+    /*anchura*/
+    width: 40vh;
+    padding: 2%;
+    margin: 5% auto;
+    background-color: cadetblue;
+}
+
+#section-formulario-contacto form input[type="reset"],
+#section-formulario-contacto form input[type="submit"] {
+    border: none;
+}

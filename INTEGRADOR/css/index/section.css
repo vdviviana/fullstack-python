@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*TODO FONDO NEGRO*/
+    background-color: black;
+    color: azure;
+    /* overflow-x: hidden; */
+
+}
+
+section {
+    /*margenes*/
+    margin-top: 1.4%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    /*para identificar elemento section*/
+    border-radius: 2px;
+    border: 1px white solid;
+}
+
+#section-publicidad {
+    /*altura*/
+    height: 40%;
+    /*anchura*/
+    width: 98%;
+
+}
+
+/* ****************************** */
+
+#section-publicidad .publicidad-div1 {
+    display: flex;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-evenly;
+}
+
+#section-publicidad .publicidad-div1 article {
+    /*anchura*/
+    width: 20%;
+    /*altura minima de section*/
+    min-height: 50vh;
+    /*acomoda los articulos en la misma fila*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*para identificar elemento section*/
+    border-radius: 2px;
+    border: 1px white solid;
+}
+
+#section-publicidad .publicidad-div1 article h4,
+#section-publicidad .publicidad-div1 article p {
+    /*separa: el "h4" en la parte superior del articulo y "p" queda en la mitad del articulo*/
+    flex: 1;
+}
+
+/* ****************************** */
+/* ****************************** */
+
+#section-publicidad .publicidad-div2 {
+    /*anchura*/
+    width: 100%;
+    display: flex;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content:space-around;
+    /*centra el div*/
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+
+}
+
+#section-publicidad .publicidad-div2 article {
+    padding: 5px;;
+    /*para identificar elemento section*/
+    border-radius: 2px;
+    border: 1px white solid;
+}
+
+/* ****************************** */
+/* ****************************** */
+
+#section-publicidad .publicidad-div3 {
+    display: flex;
+    /*para que distribuya el enlace en espacio parejo*/
+    justify-content: space-evenly;
+}
+
+#section-publicidad .publicidad-div3 article {
+    /*anchura*/
+    width: 20%;
+    /*altura minima de section*/
+    min-height: 50vh;
+    /*acomoda los articulos en la misma fila*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*para identificar elemento section*/
+    border-radius: 2px;
+    border: 1px white solid;
+}
+
+#section-publicidad .publicidad-div3 article h4,
+#section-publicidad .publicidad-div3 article p {
+    /*separa: el "h4" en la parte superior del articulo y "p" queda en la mitad del articulo*/
+    flex: 1;
+}
+
+/* ****************************** */
+
+
+

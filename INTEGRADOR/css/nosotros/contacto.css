@@ -7,7 +7,7 @@
         /*espacio entre las columnas*/
         grid-column-gap: 1%;
     /*anchura*/
-    width: 40vh;
+    width: 60%;
     padding: 2%;
     margin: 5% auto;
     background-color: cadetblue;

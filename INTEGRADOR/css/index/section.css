@@ -18,8 +18,8 @@ section {
     margin-right: 1%;
 
     /*para identificar elemento section*/
-    border-radius: 2px;
-    border: 1px white solid;
+    /*border-radius: 2px;
+    border: 1px white solid;*/
 }
 
 #section-publicidad {
@@ -49,8 +49,8 @@ section {
     justify-content: center;
     align-items: center;
     /*para identificar elemento section*/
-    border-radius: 2px;
-    border: 1px white solid;
+    /*border-radius: 2px;
+    border: 1px white solid;*/
 }
 
 #section-publicidad .publicidad-div1 article h4,
@@ -67,7 +67,7 @@ section {
     width: 100%;
     display: flex;
     /*para que distribuya el enlace en espacio parejo*/
-    justify-content:space-around;
+    justify-content: space-around;
     /*centra el div*/
     flex-wrap: wrap;
     margin: 0 auto;
@@ -76,7 +76,8 @@ section {
 }
 
 #section-publicidad .publicidad-div2 article {
-    padding: 5px;;
+    padding: 5px;
+    ;
     /*para identificar elemento section*/
     border-radius: 2px;
     border: 1px white solid;
@@ -112,7 +113,84 @@ section {
     flex: 1;
 }
 
+#section-publicidad img {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    max-width: 95%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: auto;
+}
+
+/* ************** cuadrado + dos circulos = corazón **************** */
+
+.love {
+    /*altura*/
+    height: 9px;
+    /*anchura*/
+    width: 9px;
+
+    transform: rotate(45deg);
+    background: rgb(80, 7, 7);
+
+    position: relative;
+    /*top: 10rem;
+    left: 10rem;*/
+    animation: beating 2s ease infinite;
+}
+
+.love:before,
+.love:after {
+    content: "";
+    /*altura*/
+    height: 9px;
+    /*anchura*/
+    width: 9px;
+    border-radius: 50%;
+    background: rgb(80, 7, 7);
+    position: absolute;
+}
+
+.love:before {
+    top: 0;
+    left: -5px;
+}
+
+.love:after {
+    top: -5px;
+}
+
+/* ***************** animación latido corazón ************* */
+
+@keyframes beating {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(45deg) scale(2);
+    }
+
+    /*
+    100% {
+        transform: rotate(45deg) scale(1);
+    }*/
+}
+
 /* ****************************** */
 
-
-
+.corazon {
+    /*altura*/
+    height: auto;
+    /*anchura*/
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

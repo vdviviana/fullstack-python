@@ -1,13 +1,53 @@
 
-footer {
-    /*anchura*/
+footer {  
+     /*anchura*/
     width: 98%;
     /*margenes*/
     margin-top: 1%;
     margin-left: 1%;
     margin-right: 1%;
-
+    background-color: black;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 0;
+    bottom: 0;
+   /* width: 100%;
+    padding: 20px;
+    height: 50px;
+    margin-top: 0; */
     /*para identificar elemento footer*/
     border-radius: 2px;
     border: 1px white solid;
+}
+
+/*red sociales*/
+.redsoc {
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.redsoc a {
+    color: #e40b70;
+    margin: 0px 6px;
+    /*margen izq y margen derecho*/
+    font-size: 2vw;
+    /*20px*/
+}
+
+.redsoc a:hover {
+    color: #999999
+}
+
+/*imagenes*/
+
+.img-cliente {
+    width: 20%;
+    margin-left: 11%;
+}
+
+.imgindex,
+.imgabout {
+    width: 40%;
 }

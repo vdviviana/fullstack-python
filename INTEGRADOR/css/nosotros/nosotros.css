@@ -18,18 +18,10 @@ p {
 .contenedor {
     max-width: 1200px;
     width: 95%;
-    margin: 0 auto;
+    /*margen arriba abajo*/
+    margin: 5% auto;
 }
 
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 @media (min-width:768px) {
     .con-sidebar {

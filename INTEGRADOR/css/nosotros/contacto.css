@@ -4,8 +4,8 @@
     grid-template-columns: repeat(2, auto);
     /*espacio entre las filas*/
     grid-row-gap: 1%;
-        /*espacio entre las columnas*/
-        grid-column-gap: 1%;
+    /*espacio entre las columnas*/
+    grid-column-gap: 1%;
     /*anchura*/
     width: 60%;
     padding: 2%;

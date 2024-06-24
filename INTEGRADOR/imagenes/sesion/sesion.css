@@ -1,0 +1,58 @@
+section {
+    /*margenes*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    /*para identificar elemento section*/
+    /*border-radius: 2px;
+    border: 1px white solid;*/
+}
+
+.sesion {
+    display: grid;
+    /*cada fila tendra dos columnas*/
+    grid-template-columns: repeat(2, auto);
+    /*espacio entre las filas*/
+    grid-row-gap: 20%;
+    /*espacio entre las columnas*/
+    grid-column-gap: 10%;
+    /*anchura*/
+    width: 95%;
+    padding: 2%;
+    margin: 5% auto;
+    /*background-color: cadetblue; */
+}
+
+form {
+    display: grid;
+    /*cada fila tendra dos columnas*/
+    grid-template-columns: repeat(2, auto);
+    /*espacio entre las filas*/
+    grid-row-gap: 1%;
+    /*espacio entre las columnas*/
+    grid-column-gap: 1%;
+    /*anchura*/
+    width: 90%;
+    padding: 2%;
+    margin: 0% auto;
+    /*background-color: cadetblue; */
+    /*para identificar elemento section*/
+    border-radius: 2px;
+    border: 1px white solid;
+}
+
+
+form input[type="text"] {
+    /*anchura*/
+    width: 95%;
+    border: none;
+}
+
+form input[type="submit"] {
+    margin-top: 15%;
+    /*anchura*/
+    width: 95%;
+    border: none;
+}
